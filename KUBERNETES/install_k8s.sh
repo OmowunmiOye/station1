@@ -1,5 +1,6 @@
 #! /bin/bash
 
+sudo yum update -y
 sudo swapoff -a
 sudo sed -i.bak -r 's/(.+ swap .+)/#\1/' /etc/fstab
 sudo setenforce 0
